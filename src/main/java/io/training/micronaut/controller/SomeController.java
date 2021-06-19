@@ -14,8 +14,8 @@ public class SomeController {
     BizService bizService;
 
     @Get("/getBySku")
-    public Item getBySku() {
-        return null;
+    public Item getBySku(Long sku) {
+        return bizService.getBySku(sku);
     }
 
 }
