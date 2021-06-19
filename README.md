@@ -35,6 +35,10 @@ gu install native-image
 ```shell
 ./mvnw package -Dpackaging=native-image
 ```
+启动后占用内存32M，打包后文件大小为70M左右。
+启动速度是不到1s, 秒启动。。。
+
+
 ### 普通打包
 普通打包的最终类型为jar, 打包成native就是一个可执行文件。
 ```shell
@@ -45,5 +49,11 @@ gu install native-image
 
 但是native文件启动速度飞快，占用内存较少。如果执行在一个小内存设备上可以
 构建成一个本地文件，这样可以节约服务器成本。
+
+### 测试访问
+
+http://ip:8080/training/getBySku?sku=1001
+
+
 
 
