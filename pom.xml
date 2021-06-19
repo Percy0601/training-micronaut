@@ -145,6 +145,10 @@
               <artifactId>micronaut-data-processor</artifactId>
               <version>${micronaut.data.version}</version>
             </path>
+            <path>
+              <groupId>io.micronaut</groupId>
+              <artifactId>micronaut-graal</artifactId>
+            </path>
           </annotationProcessorPaths>
           <compilerArgs>
             <arg>-Amicronaut.processing.group=io.training.micronaut</arg>
