@@ -134,4 +134,6 @@ gradle-app.setting
 **/__pycache__/**
 *.pyc
 
+application.yml
+
 
