@@ -35,5 +35,15 @@ gu install native-image
 ```shell
 ./mvnw package -Dpackaging=native-image
 ```
+### 普通打包
+普通打包的最终类型为jar, 打包成native就是一个可执行文件。
+```shell
+./mvnw clean package -Dmaven.test.skip=true
+```
+
+经过对比后发现，可执行文件大约70M, jar文件大约20M
+
+但是native文件启动速度飞快，占用内存较少。如果执行在一个小内存设备上可以
+构建成一个本地文件，这样可以节约服务器成本。
 
 
